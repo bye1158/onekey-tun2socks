@@ -65,19 +65,19 @@ chmod +x onekey-tun2socks.sh
 4. 运行脚本：
 ```bash
 # 安装 Alice 版本
-sudo ./onekey-tun2socks.sh -i alice
+sudo ./onekey-tun2socks.sh -i 爱丽丝
 
 # 安装 Legend 版本（出口可能已失效）
-sudo ./onekey-tun2socks.sh -i legend
+./onekey-tun2socks.sh -i legend
 
 # 变更 Alice 出口
-sudo ./onekey-tun2socks.sh -s
+./onekey-tun2socks.sh -s
 
 # 检查更新
-sudo ./onekey-tun2socks.sh -u
+./onekey-tun2socks.sh -u
 
 # 卸载
-sudo ./onekey-tun2socks.sh -r
+./onekey-tun2socks.sh -r
 ```
 
 ## 服务管理
@@ -92,7 +92,7 @@ systemctl status tun2socks.service
 systemctl start tun2socks.service
 
 # 停止服务
-systemctl stop tun2socks.service
+systemctl 停止 tun2socks.service
 
 # 重启服务
 systemctl restart tun2socks.service
@@ -100,7 +100,7 @@ systemctl restart tun2socks.service
 # 查看日志
 journalctl -u tun2socks.service
 ```
-## alpine
+## 阿尔卑斯
 使用方法
 
 下载脚本：
@@ -116,20 +116,15 @@ curl -L https://raw.githubusercontent.com/bye1158/onekey-tun2socks/main/alpine-t
 ```
 
 
-安装时会提示输入 Socks5 地址/端口/用户名/密码
+安装 custom 节点
+sudo ./onekey-tun2socks.sh -i custom
 
-会生成 /etc/tun2socks/config.yaml 和 OpenRC 服务 /etc/init.d/tun2socks
+启动 / 停止
+sudo ./onekey-tun2socks.sh -s
+sudo ./onekey-tun2socks.sh -k
 
-OpenRC 会自动加入默认 runlevel，开机自动启动
-
-启动 / 停止服务：
-
-sudo ./onekey-tun2socks.sh -s  # 启动
-sudo ./onekey-tun2socks.sh -k  # 停止
-
-
-卸载：
-
+卸载
 sudo ./onekey-tun2socks.sh -r
+
 
 
