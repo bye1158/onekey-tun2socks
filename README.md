@@ -23,6 +23,10 @@ v1.0.2 更新Alice出口（移除香港机房IP）
 
 ## 快速开始
 
+## 需要安装 systemd     sudo apk add systemd
+```bash
+sudo apk add systemd
+```
 ### 自定义sock5模式
 ```bash
 curl -L https://raw.githubusercontent.com/hkfires/onekey-tun2socks/main/onekey-tun2socks.sh -o onekey-tun2socks.sh && chmod +x onekey-tun2socks.sh && sudo ./onekey-tun2socks.sh -i custom
