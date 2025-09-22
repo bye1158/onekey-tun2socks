@@ -5,7 +5,7 @@ set -e
 # 常量和全局变量
 #================================================================================
 VERSION="1.1.1"
-SCRIPT_URL="https://raw.githubusercontent.com/bye1158/onekey-tun2socks/main/alpine-tun2socks.sh"
+SCRIPT_URL="https://raw.githubusercontent.com/bye1158/blob/onekey-tun2socks/main/alpine-tun2socks.sh"
 
 # 颜色
 RED='\033[0;31m'; GREEN='\033[0;32m'; BLUE='\033[0;34m'; NC='\033[0m'
