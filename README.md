@@ -100,11 +100,6 @@ systemctl restart tun2socks.service
 # 查看日志
 journalctl -u tun2socks.service
 ```
-## alpine
-使用方法
-
-安装 custom 节点
-sudo ./onekey-tun2socks.sh -i custom
 
 
 
