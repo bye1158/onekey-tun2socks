@@ -103,23 +103,10 @@ journalctl -u tun2socks.service
 ## alpine
 使用方法
 
-
-安装 tun2socks 并配置 custom 节点：
-
-```bash
-curl -L https://raw.githubusercontent.com/bye1158/onekey-tun2socks/blob/main/alpine-tun2socks.sh -o alpine-tun2socks.sh && chmod +x alpine-tun2socks.sh && sudo ./alpine-tun2socks.sh -i custom
-```
-
-
 安装 custom 节点
 sudo ./onekey-tun2socks.sh -i custom
 
-启动 / 停止
-sudo ./onekey-tun2socks.sh -s
-sudo ./onekey-tun2socks.sh -k
 
-卸载
-sudo ./onekey-tun2socks.sh -r
 
 
 
