@@ -23,10 +23,6 @@ v1.0.2 更新Alice出口（移除香港机房IP）
 
 ## 快速开始
 
-## 需要安装 systemd     sudo apk add systemd
-```bash
-sudo apk add systemd
-```
 ### 自定义sock5模式
 ```bash
 curl -L https://raw.githubusercontent.com/hkfires/onekey-tun2socks/main/onekey-tun2socks.sh -o onekey-tun2socks.sh && chmod +x onekey-tun2socks.sh && sudo ./onekey-tun2socks.sh -i custom
@@ -104,3 +100,36 @@ systemctl restart tun2socks.service
 # 查看日志
 journalctl -u tun2socks.service
 ```
+## alpine
+使用方法
+
+下载脚本：
+
+curl -L -o onekey-tun2socks.sh <脚本URL>
+chmod +x onekey-tun2socks.sh
+
+
+安装 tun2socks 并配置 custom 节点：
+
+```bash
+curl -L https://raw.githubusercontent.com/bye1158/onekey-tun2socks/main/alpine-tun2socks.sh -o alpine-tun2socks.sh && chmod +x alpine-tun2socks.sh && sudo ./alpine-tun2socks.sh -i custom
+```
+
+
+安装时会提示输入 Socks5 地址/端口/用户名/密码
+
+会生成 /etc/tun2socks/config.yaml 和 OpenRC 服务 /etc/init.d/tun2socks
+
+OpenRC 会自动加入默认 runlevel，开机自动启动
+
+启动 / 停止服务：
+
+sudo ./onekey-tun2socks.sh -s  # 启动
+sudo ./onekey-tun2socks.sh -k  # 停止
+
+
+卸载：
+
+sudo ./onekey-tun2socks.sh -r
+
+
