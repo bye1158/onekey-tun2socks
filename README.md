@@ -107,7 +107,7 @@ journalctl -u tun2socks.service
 安装 tun2socks 并配置 custom 节点：
 
 ```bash
-curl -L https://raw.githubusercontent.com/bye1158/onekey-tun2socks/main/alpine-tun2socks.sh -o alpine-tun2socks.sh && chmod +x alpine-tun2socks.sh && sudo ./alpine-tun2socks.sh -i custom
+curl -L https://raw.githubusercontent.com/bye1158/onekey-tun2socks/blob/main/alpine-tun2socks.sh -o alpine-tun2socks.sh && chmod +x alpine-tun2socks.sh && sudo ./alpine-tun2socks.sh -i custom
 ```
 
 
