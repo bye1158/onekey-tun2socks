@@ -23,6 +23,11 @@ v1.0.2 更新Alice出口（移除香港机房IP）
 
 ## 快速开始
 
+### 自定义sock5模式
+```bash
+curl -L https://raw.githubusercontent.com/hkfires/onekey-tun2socks/main/onekey-tun2socks.sh -o onekey-tun2socks.sh && chmod +x onekey-tun2socks.sh && sudo ./onekey-tun2socks.sh -i custom
+```
+
 ### 以下命令适用于Alice的纯IPv6免费机
 ```bash
 curl -L https://raw.githubusercontent.com/hkfires/onekey-tun2socks/main/onekey-tun2socks.sh -o onekey-tun2socks.sh && chmod +x onekey-tun2socks.sh && sudo ./onekey-tun2socks.sh -i alice
