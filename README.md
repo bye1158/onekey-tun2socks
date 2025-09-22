@@ -9,7 +9,7 @@ v1.0.9 过滤本地路由，防止回环
 
 v1.0.8 无聊的重构
 
-v1.0.7 下载tun2socks时使用自建DNS64/NAT64服务器，确保服务可控（仅Alice机型可用）
+下载tun2socks时使用自建DNS64/NAT64服务器，确保服务可控（仅Alice机型可用）
 
 v1.0.6 无聊的更新（重构了一些函数）
 
@@ -22,6 +22,8 @@ v1.0.3 解决无IPv4的机子'RTNETLINK answers: Network is unreachable'报错�
 v1.0.2 更新Alice出口（移除香港机房IP）
 
 ## 快速开始
+
+### alpine无法使用
 
 ### 自定义sock5模式
 ```bash
